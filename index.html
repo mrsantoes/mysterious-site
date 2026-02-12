@@ -258,8 +258,8 @@ function yesClicked(){
   const box = document.getElementById("popupContent");
 
   box.innerHTML = `
-  <div style="display:flex; flex-direction: column; gap:20px; align-items: center;">
-    <div style="flex:1; text-align:left;">
+  <div style="display:flex; flex-direction: column; gap:20px; align-items: stretch;">
+    <div style="text-align:left;">
       <h2>dear jo ♡</h2>
       <p style="line-height:1.6;">
         I am not a lucky man, nor am I a good man.<br><br>
@@ -277,7 +277,7 @@ function yesClicked(){
       <img src="files/Photo5.png" class="imageBox">
     </div>
   </div>
-  `;
+`;
 
   document.body.classList.add("final-bg");
   launchConfetti();
