@@ -171,6 +171,13 @@ button:disabled {
 
 <script>
 
+const bgMusic = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+  bgMusic.play().catch(() => {});
+}, { once: true });
+
+  
 /* Setup */
 const steps = [
   "but its pretty hard to think of",
